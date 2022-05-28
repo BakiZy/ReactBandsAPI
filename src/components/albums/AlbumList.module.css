@@ -1,0 +1,29 @@
+th {
+  background-color: #cc2062;
+  color: #fcb8d2;
+  text-align: left;
+  margin-top: 1px;
+  padding-top: 1px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+td {
+  justify-content: center;
+  border: 1px solid black;
+  text-align: ce;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 75%;
+  height: 75%;
+  border: 2px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+}
