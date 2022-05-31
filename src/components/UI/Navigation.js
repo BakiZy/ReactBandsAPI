@@ -18,22 +18,27 @@ function Navigation() {
       <nav>
         <ul>
           <li>
-            <Link to="/">All albums</Link>
+            <Link to="/">Svi albumi</Link>
           </li>
           {!isLoggedIn && (
             <li>
-              <Link to="/authentication">Login/Sign Up</Link>
+              <Link to="/authentication">Login/Odjava</Link>
             </li>
           )}
           {isLoggedIn && (
             <li>
-              <Link to="/account">Edit profile</Link>
+              <Link to="/account">Izmeni profil</Link>
+            </li>
+          )}
+          {isLoggedIn && (
+            <li>
+              <Link to="/new-album">Novi album</Link>
             </li>
           )}
           {isLoggedIn && (
             <li>
               <Link to="/" onClick={logoutHandler}>
-                Logout
+                Odjavi se
               </Link>
             </li>
           )}
