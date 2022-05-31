@@ -8,7 +8,7 @@ const AlbumItem = (props) => {
 
   return (
     <tr className={classes.AlbumItem}>
-      <td>{props.id}</td>
+      <td hidden={true}>{props.id}</td>
       <td>{props.name}</td>
       <td>{props.genre}</td>
       <td>{props.yearPublish}</td>
@@ -16,12 +16,22 @@ const AlbumItem = (props) => {
       <td>{props.bandName}</td>
       {isLoggedIn && (
         <td>
-          <button onClick={() => props.onRemove(props.id)}>Obrisi</button>
+          <button
+            className={classes.button}
+            onClick={() => props.onRemove(props.id)}
+          >
+            Obrisi
+          </button>
         </td>
       )}
       {isLoggedIn && (
         <td>
-          <button onClick={() => props.onEdit(props.id)}>Izmeni</button>
+          <button
+            className={classes.button}
+            onClick={() => props.onEdit(props.id)}
+          >
+            Izmeni
+          </button>
         </td>
       )}
     </tr>

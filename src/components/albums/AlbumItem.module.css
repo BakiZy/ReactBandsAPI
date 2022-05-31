@@ -1,24 +1,23 @@
-.album {
-  display: flex;
-  color: #fff;
+th {
+  background-color: #cc2062;
+  color: #fcb8d2;
+  text-align: center;
+  margin-top: 1px;
+  border: 2px solid rgb(0, 0, 0);
 }
 
-.action {
-  margin-top: 1.5rem;
+td {
+  justify-content: center;
+  border: 1px solid black;
+  text-align: center;
+  padding-bottom: 0.5rem;
 }
 
-button {
-  font: inherit;
-  cursor: pointer;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  background-color: #38015c;
-  color: white;
-  border: 1px solid #38015c;
-  display: flex;
-}
-
-button:hover {
-  background-color: #540d83;
-  border-color: #540d83;
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 75%;
+  height: 75%;
+  border: 2px solid black;
 }

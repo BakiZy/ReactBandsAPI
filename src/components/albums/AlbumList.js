@@ -16,6 +16,7 @@ const AlbumList = (props) => {
         genre={album.genre}
         yearPublish={album.yearPublish}
         numberOfSales={album.numberOfSales}
+        bandId={album.bandId}
         bandName={album.bandName}
         onRemove={props.onRemove}
         onEdit={props.onEdit}
@@ -28,7 +29,6 @@ const AlbumList = (props) => {
       <table className={classes.table}>
         <thead>
           <tr>
-            <th>Unique album Id</th>
             <th>Ime albuma</th>
             <th>Žanr</th>
             <th>Godina izdavanja</th>
